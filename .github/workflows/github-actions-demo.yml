@@ -1,0 +1,11 @@
+name: My Workflow Demo
+on: 
+  push:
+   branches: main
+   paths-ignore: [.github/**]
+  pull_request:
+    branches: main
+  workflow_dispatch:  
+  schedule:
+    - cron: '15 6 * * 0'  
+  
